@@ -82,6 +82,8 @@ document
     const kmDaPercorrere = document.getElementById("kmDaPercorrere").value;
     const km = parseFloat(kmDaPercorrere);
 
+    // Calcolo il prezzo del biglietto in base all'età
+
     let prezzoKm = km * 0.21;
 
     if (eta < 18) {
@@ -91,6 +93,8 @@ document
       let scontoQuaranta = (prezzoKm / 100) * 40;
       prezzoKm = prezzoKm - scontoQuaranta;
     }
+
+    // Stampa i risultati sul biglietto
 
     document.getElementById("resultNome").innerHTML = nomePasseggero;
     document.getElementById("resultCognome").innerHTML = cognomePasseggero;
